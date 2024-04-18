@@ -5,12 +5,13 @@ Created on Wed Mar  9 00:14:12 2022
 
 Main file to calculate results for publication
 
-Pteropod IBM Acidification
+Multiscenario Shelled Pteropod IBM
 
-Pteropod population-level responses to acidification across time-scales in the California Current System.
-Urs Hofmann Elizondo, Meike Vogt, Nina Bednarsek, Matthias Münnich, and Nicolas Gruber, 2022
+The impact of aragonite saturation variability on shelled pteropods: An attribution study in the
+California Current System. Urs Hofmann Elizondo, Meike Vogt, Nina Bednarsek, Matthias Münnich, and Nicolas Gruber, 2024.
+Global Change Biology
 
-@author: ursho
+@author: Urs Hofmann Elizondo
 """
 
 import importlib.util
@@ -154,7 +155,6 @@ def main():
     # Get the initial random positions (only calculate once for the first year)
     # =========================================================================
     if my_config.main_flag:
-#        time_threshold = time_threshold
 
         distance_file = my_config.distance_file
         outfile = my_config.output_dir_initialization+my_config.initial_positions_file
@@ -279,3 +279,4 @@ if __name__ in "__main__":
     logging.basicConfig(level=logging.WARNING)
 
     main()
+    
