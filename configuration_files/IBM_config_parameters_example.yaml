@@ -1,0 +1,126 @@
+# IBM_config_paramaters template .yaml file
+#Author: Urs Hofmann Elizondo
+#mail: urs.hofmann@usys.ethz.ch
+#Created on 18/04/2024
+
+
+#Simulation comparison between No extreme scenario and hindcast simulation
+#Results contain the natural, and trend components
+
+#leave as None, it will be overwritten with the name of the config file
+config_file: None
+
+#Root path to environmental data and ROMS-grid data
+data_path: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/"
+mesh_file: "/nfs/kryo/work/fdesmet/roms/input/pactcs30/pactcs30_grd.nc"
+
+#Path to mortality calibration results and root file names
+directory_mort: "/nfs/kryo/work/ursho/PhD/Projects/Pteropod_IBM/Analysis/Calibration/Mortality/Results/"
+similarity_file: "Similarity_to_MAREDAT_V25_Part_{}.csv"
+
+#Path to initialization with filenames
+output_dir_initialization: "/nfs/kryo/work/ursho/PhD/Projects/Pteropod_Extremes/Analysis/output_initialization_V_{}/"
+gen0_file: "Gen0.csv"
+gen1_file: "Gen1.csv"
+out_ptero_file: "/Pteropods_Day_{}.csv"
+initial_positions_file: "Initial_positions.csv"
+
+#Path to the MAREDAT dataset for comparison
+reference_abundance_data: "/nfs/kryo/work/ursho/PhD/Projects/Pteropod_Extremes/Data/MarEDat20120203Pteropods.nc"
+
+#Output path of physics only run of X days and name of the model output  
+output_dir_physics: "/nfs/kryo/work/ursho/PhD/Projects/Pteropod_Extremes/Analysis/output_physics_only_V_{}/"
+physics_only_file: "JitPtero_year_init_Day_{}.nc"
+
+#Temporary output path on cluster
+output_dir_simulation_scratch: "/cluster/scratch/ursho/Pteropod_Acidification_trend_14/output/netcdf/"
+outfile_mort_scratch: "/cluster/scratch/ursho/Pteropod_Acidification_trend_14/output/mortalities/"
+outfile_growth_scratch: "/cluster/scratch/ursho/Pteropod_Acidification_trend_14/output/growth/"
+output_tables_scratch:  "/cluster/scratch/ursho/Pteropod_Acidification_trend_14/output/tables/"
+
+#Path of end simulation
+output_dir_simulation: "/nfs/meso/work/ursho/PhD/Projects/Pteropod_Extremes/Analysis/Pteropod_Acidification_NoDiss_Hindcast_14/output/netcdf/"
+outfile_mort: "/nfs/meso/work/ursho/PhD/Projects/Pteropod_Extremes/Analysis/Pteropod_Acidification_NoDiss_Hindcast/output/mortalities/"
+outfile_growth: "/nfs/meso/work/ursho/PhD/Projects/Pteropod_Extremes/Analysis/Pteropod_Acidification_NoDiss_Hindcast_14/output/growth/"
+output_tables:  "/nfs/meso/work/ursho/PhD/Projects/Pteropod_Extremes/Analysis/Pteropod_Acidification_NoDiss_Hindcast_14/output/tables/"
+
+#Path to idealized temperature and food availability data used during the model spin-up  
+dir_env: "/nfs/kryo/work/ursho/PhD/Projects/Pteropod_Extremes/Data/"
+sst_file: "daily_sst.csv"
+food_file: "daily_food.csv"
+
+#Path to ocean currents  
+velocity_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/time_nco_velocities_pactcs30_{}_avg.nc"
+
+#Path to aragonite alternative scenario
+aragonite_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Aragonite/hindcast/nco_aragonite_pactcs30_{}_avg.nc"
+aragonite_hind_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Aragonite/hindcast/nco_aragonite_pactcs30_{}_avg.nc"
+
+#Path to aragonite scenario with lesser effect
+scenario_arag_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Aragonite/Absolute_threshold_no_effect/control_aragonite_pactcs30_{}_avg.nc"
+extreme_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Aragonite/Absolute_threshold_hindcast_baseline/control_aragonite_pactcs30_{}_avg.nc"
+
+#Path to all other environmental variables (oxygen, temperature, chlorophyll-a, depth, synthetic unbeaching velocity, Land/Ocean mask, distance to coast, reseeding area or area of interest)  
+oxygen_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Oxygen/nco_oxygen_pactcs30_{}_avg.nc"
+temperature_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Temperature/nco_temp_pactcs30_{}_avg.nc"
+chlorophyll_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Chlorophyll/nco_chlorophyll_pactcs30_{}_avg.nc"
+depth_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/depth_z_pos.nc"
+unbeach_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/UnBeachVel_Comb.nc"
+mask_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/UnBeachVel_Comb.nc"
+distance_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/distance_to_coast.nc"
+reseed_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/reseed_area.nc"
+
+#Names of the variables in the netCDF files  
+velocity_U_variable_name: "u"
+velocity_V_variable_name: "v"
+velocity_W_variable_name: "w"
+aragonite_variable_name: "omega_arag_offl"
+scenario_arag_variable_name: "omega_arag_offl"
+aragonite_hind_variable_name: "omega_arag_offl"
+scenario_extreme_variable_name: "Extremes"
+temperature_variable_name: "temp"
+oxygen_variable_name: "O2"
+chlorophyll_variable_name: "TOT_CHL"
+depth_variable_name: "depth_Z_r"
+mask_variable_name: "mask_comb"
+unbeach_lat_variable_name: "unBeach_lat"
+unbeach_lon_variable_name: "unBeach_lon"
+distance_variable_name: "distance_coast"
+reseed_variable_name: "reseed_area"
+
+lon_name: "lon_psi"
+lat_name: "lat_psi"
+depth_name: "depth_Z_w"
+time_name: "time_counter"
+
+#class BooleanFlags, to determine which part of the model to run:
+flag_calculate_initial_population: False
+flag_calculate_initial_positions: True
+flag_run_physics_only: False
+main_flag: None
+
+#Model run parameters and attributes of the pteropods (mortality rates, number of eggs, increase of ERR, half saturation for food availability, T0, max temperature for growth, optimal aragonite saturation state and temperature with no effect on pteropods, size threshold at which the dissolution affects individuals
+control: None
+start_year: 1984
+version: None
+restart_day: None
+start_day: None
+num_init: None
+day_start_initial_eggs: 120
+seed: 3
+rate_g0_0: 0.1
+rate_g0_1: 0.075
+rate_g0_2: 0.01
+rate_g0_3: 0.075
+rate_g1_0: 0.45
+rate_g1_1: 0.01
+rate_g1_2: 0.01
+rate_g1_3: 0.01
+num_eggs: 500
+delta_err: 20
+half_saturation: 0.418
+temperature_0: 14.5
+temperature_max: 18.0
+arag_optimal: 1.5
+temp_optimal: 14
+size_threshold: 0.5 
