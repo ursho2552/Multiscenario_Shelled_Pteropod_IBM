@@ -1,4 +1,4 @@
-## Multiscenario Shelled Pteropod Individual-Based Model (mspIBM)
+## Multi-scenario Shelled Pteropod Individual-Based Model (mspIBM)
 
 **spIBM** is a set of python classes and methods to simulate the mortality, growth, development and behaviour (diel vertical migration, spawning, active avoidance of low oxygen) of shelled pteropods across different life-stages. The model uses the size as a key trait to determine the behaviour and movement of individuals. The movement is simulated using the python package [parcels v2.1.3](https://doi.org/10.5281/zenodo.3630568).
 
