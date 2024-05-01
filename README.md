@@ -7,8 +7,6 @@
 The manuscript detailing the first release of spIBM, has been published in [Ecological Modelling](https://doi.org/10.1016/j.ecolmodel.2022.109944), and can be cited as:
 *Hofmann Elizondo U. and M. Vogt (2022) Individual-based modelling of shelled pteropods. Ecological Modelling, Volume 468, ISSN 0304-3800, https://doi.org/10.1016/j.ecolmodel.2022.109944*
 
-The manuscript detailing the changes to the model for the Multiscenario study, is currently under review for Global Change Biology.
+The manuscript detailing the changes to the model for the Multiscenario study, has been accepted in Global Change Biology:
+*Hofmann Elizondo U., M. Vogt, N. Bednaršek, M. Münnich, and N. Gruber (2024) The impact of aragonite saturation variability on shelled pteropods: An attribution study in the California Current System*
 
-### Further information
-
-To be added.
