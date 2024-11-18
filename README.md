@@ -1,4 +1,4 @@
-## Multiscenario Shelled Pteropod Individual-Based Model (mspIBM)
+## Multi-scenario Shelled Pteropod Individual-Based Model (mspIBM)
 
 **spIBM** is a set of python modules and methods to simulate the mortality, growth, development and behaviour (diel vertical migration, spawning, active avoidance of low oxygen) of shelled pteropods across different life-stages. The model uses the size as a key trait to determine the behaviour and movement of individuals. The movement is simulated using the python package [parcels v2.1.3](https://doi.org/10.5281/zenodo.3630568).
 
@@ -7,6 +7,7 @@
 The manuscript detailing the first release of spIBM, has been published in [Ecological Modelling](https://doi.org/10.1016/j.ecolmodel.2022.109944), and can be cited as:
 *Hofmann Elizondo U. and M. Vogt (2022) Individual-based modelling of shelled pteropods. Ecological Modelling, Volume 468, ISSN 0304-3800, https://doi.org/10.1016/j.ecolmodel.2022.109944*
 
+<<<<<<< HEAD
 The manuscript detailing the changes to the model for the Multiscenario study, has been published in [Global Change Biology](https://doi.org/10.1111/gcb.17345), and can be cited as:
 *Hofmann Elizondo, U., Vogt, M., Bednaršek, N., Münnich, M., & Gruber, N. (2024). The impact of aragonite saturation variability on shelled pteropods: An attribution study in the California Current System. Global Change Biology, 30, e17345. https://doi.org/10.1111/gcb.17345*
 
@@ -19,3 +20,8 @@ In addition, we improved how the growth, mortality, and diel vertical migration 
 ![](https://github.com/ursho2552/Multiscenario_Shelled_Pteropod_IBM/blob/main/gifs/N_scenario.gif)
 **Figure 1.** *Simulated pteropod abundances and vertical migration for a one-year simulation using the N, NT, and NTE scenarios in the California Current System* 
 
+=======
+The manuscript detailing the changes to the model for the Multiscenario study, has been accepted in Global Change Biology:
+*Hofmann Elizondo U., M. Vogt, N. Bednaršek, M. Münnich, and N. Gruber (2024) The impact of aragonite saturation variability on shelled pteropods: An attribution study in the California Current System*
+
+>>>>>>> 5c8a84a7517ca850f2a7705d7022b620308e5935
