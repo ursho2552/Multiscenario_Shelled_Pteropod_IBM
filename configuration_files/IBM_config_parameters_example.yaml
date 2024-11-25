@@ -11,8 +11,8 @@
 config_file: None
 
 #Root path to environmental data and ROMS-grid data
-data_path: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/"
-mesh_file: "/nfs/kryo/work/fdesmet/roms/input/pactcs30/pactcs30_grd.nc"
+data_path: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/"
+mesh_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Velocities/pactcs30_grd.nc"
 
 #Path to mortality calibration results and root file names
 directory_mort: "/nfs/kryo/work/ursho/PhD/Projects/Pteropod_IBM/Analysis/Calibration/Mortality/Results/"
@@ -28,7 +28,7 @@ initial_positions_file: "Initial_positions.csv"
 #Path to the MAREDAT dataset for comparison
 reference_abundance_data: "/nfs/kryo/work/ursho/PhD/Projects/Pteropod_Extremes/Data/MarEDat20120203Pteropods.nc"
 
-#Output path of physics only run of X days and name of the model output  
+#Output path of physics only run of X days and name of the model output
 output_dir_physics: "/nfs/kryo/work/ursho/PhD/Projects/Pteropod_Extremes/Analysis/output_physics_only_V_{}/"
 physics_only_file: "JitPtero_year_init_Day_{}.nc"
 
@@ -44,33 +44,33 @@ outfile_mort: "/nfs/meso/work/ursho/PhD/Projects/Pteropod_Extremes/Analysis/Pter
 outfile_growth: "/nfs/meso/work/ursho/PhD/Projects/Pteropod_Extremes/Analysis/Pteropod_Acidification_NoDiss_Hindcast_14/output/growth/"
 output_tables:  "/nfs/meso/work/ursho/PhD/Projects/Pteropod_Extremes/Analysis/Pteropod_Acidification_NoDiss_Hindcast_14/output/tables/"
 
-#Path to idealized temperature and food availability data used during the model spin-up  
+#Path to idealized temperature and food availability data used during the model spin-up
 dir_env: "/nfs/kryo/work/ursho/PhD/Projects/Pteropod_Extremes/Data/"
 sst_file: "daily_sst.csv"
 food_file: "daily_food.csv"
 
-#Path to ocean currents  
-velocity_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/time_nco_velocities_pactcs30_{}_avg.nc"
+#Path to ocean currents
+velocity_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Velocities/time_nco_velocities_pactcs30_{}_avg.nc"
 
 #Path to aragonite alternative scenario
-aragonite_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Aragonite/hindcast/nco_aragonite_pactcs30_{}_avg.nc"
-aragonite_hind_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Aragonite/hindcast/nco_aragonite_pactcs30_{}_avg.nc"
+aragonite_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Aragonite/hindcast/nco_aragonite_pactcs30_{}_avg.nc"
+aragonite_hind_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Aragonite/hindcast/nco_aragonite_pactcs30_{}_avg.nc"
 
 #Path to aragonite scenario with lesser effect
-scenario_arag_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Aragonite/Absolute_threshold_no_effect/control_aragonite_pactcs30_{}_avg.nc"
-extreme_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Aragonite/Absolute_threshold_hindcast_baseline/control_aragonite_pactcs30_{}_avg.nc"
+scenario_arag_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Aragonite/Absolute_threshold_no_effect/control_aragonite_pactcs30_{}_avg.nc"
+extreme_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Aragonite/Absolute_threshold_hindcast_baseline/control_aragonite_pactcs30_{}_avg.nc"
 
-#Path to all other environmental variables (oxygen, temperature, chlorophyll-a, depth, synthetic unbeaching velocity, Land/Ocean mask, distance to coast, reseeding area or area of interest)  
-oxygen_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Oxygen/nco_oxygen_pactcs30_{}_avg.nc"
-temperature_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Temperature/nco_temp_pactcs30_{}_avg.nc"
-chlorophyll_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Chlorophyll/nco_chlorophyll_pactcs30_{}_avg.nc"
-depth_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/depth_z_pos.nc"
-unbeach_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/UnBeachVel_Comb.nc"
-mask_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/UnBeachVel_Comb.nc"
-distance_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/distance_to_coast.nc"
-reseed_file: "/nfs/kryo/work/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Velocities/reseed_area.nc"
+#Path to all other environmental variables (oxygen, temperature, chlorophyll-a, depth, synthetic unbeaching velocity, Land/Ocean mask, distance to coast, reseeding area or area of interest)
+oxygen_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Oxygen/nco_oxygen_pactcs30_{}_avg.nc"
+temperature_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Temperature/nco_temp_pactcs30_{}_avg.nc"
+chlorophyll_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Chlorophyll/nco_chlorophyll_pactcs30_{}_avg.nc"
+depth_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Velocities/depth_z_pos.nc"
+unbeach_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Velocities/UnBeachVel_Comb.nc"
+mask_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Velocities/UnBeachVel_Comb.nc"
+distance_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Velocities/distance_to_coast.nc"
+reseed_file: "/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Velocities/reseed_area.nc"
 
-#Names of the variables in the netCDF files  
+#Names of the variables in the netCDF files
 velocity_U_variable_name: "u"
 velocity_V_variable_name: "v"
 velocity_W_variable_name: "w"
@@ -123,4 +123,4 @@ temperature_0: 14.5
 temperature_max: 18.0
 arag_optimal: 1.5
 temp_optimal: 14
-size_threshold: 0.5 
+size_threshold: 0.5

@@ -1,9 +1,12 @@
 #!/bin/bash
 
 module purge
-module load new gcc/4.8.2 python/3.7.1
+module load stack/.2024-06-silent  intel-oneapi-compilers/2023.2.0
+module load python/3.8.18-c3ikxoi
 
-#provide some paramters to define the model run, control and version (for reproducibility), runtime threshold (model run is restarted from the last available day if the runtime threshold is reached), remove the effects of dissolution (1: True, 0: False) 
+source /cluster/home/ursho/kryo_work/ursho/py3_euler/bin/activate
+
+#provide some paramters to define the model run, control and version (for reproducibility), runtime threshold (model run is restarted from the last available day if the runtime threshold is reached), remove the effects of dissolution (1: True, 0: False)
 control=1
 version=5
 time_threshold=23

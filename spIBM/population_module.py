@@ -10,7 +10,6 @@ import os
 
 import numpy as np
 
-
 def calculate_growth_fct():
     """Calculate the shell size of pteropods as a function of their age.
     The formula was taken from Wang et al., 2017. Returns the growth rate in
