@@ -1,0 +1,35 @@
+# climatology config_paths.yaml file
+
+#Created on 23/11/2023
+
+#author: ursho
+
+#path to ROMS grid file
+gridfile: '/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Velocities/pactcs30_grd.nc'
+
+#path to directory where climatology is stored
+climdir: '/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Temperature/Test_climatology/'
+
+#path to directory where individual files are stored
+modeldir: '/nfs/work/kryo/ursho/PhD/Projects/spIBM_forcing/environmental_fields/Temperature/'
+
+#name of files used to calculate the climatology
+individual_file: 'nco_temp_pactcs30_{}_avg.nc'
+
+#path to a simulation file with all attributes (former filepath)
+attribute_file: ' '
+
+#name of variable
+varname: 'temp'
+
+#name of run
+run_name: 'Temperature'
+
+#years to include in climatology
+start_year: 1984
+end_year: 2019
+
+#size of rolling window
+size_rolling: 7
+
+days_per_year: 365
