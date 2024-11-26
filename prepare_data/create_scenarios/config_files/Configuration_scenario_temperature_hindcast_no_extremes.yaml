@@ -1,0 +1,32 @@
+# scenario configuration file no_effect
+
+#Created on 28/11/2023
+
+#author: ursho
+
+logger_name: 'Temperature_Hindcast_without_extremes'
+
+#variable name in ROMS file
+variable: 'temp'
+# variable name in the climatology (for leap years, the word _leap is added)
+variable_climatology: 'temp'
+
+#name of the scenario experiment
+#deterimine if a no effect scenario should be calculated or not
+calculate_no_effect_scenario: False
+
+#year of the scenario. This is overwritten by the terminal input, if a start and end year are given
+year: 1984
+
+# threshold to define an effect, and how to apply it
+threshold: 14
+effect_above_threshold: True
+
+#climatology, hindcast, and constant CO2 files with path
+climatology_file: '/home/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Temperature/Temperature_climatology_7_day_moving_average.nc'
+hindcast_file: '/home/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Temperature/nco_temp_pactcs30_{}_avg.nc'
+constant_file: '/home/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Temperature/nco_temp_pactcs30_{}_avg.nc'
+
+#path where to store output and name of the file
+output_dir: '/home/ursho/PhD/Projects/Pteropods/Parcels/Environmental_data/Roms_data/Temperature/Absolute_threshold_Hindcast/'
+output_file: 'control_temp_pactcs30_{}_avg.nc'
